@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تواصل معي - علي تمام</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#222E87",
+              "accent-gold": "#E0AC26",
+              "background-pure": "#FFFFFF",
+            },
+            fontFamily: {
+              "display": ["IBM Plex Sans Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            lineHeight: {
+              'relaxed': '1.5',
+            }
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        body { 
+            font-family: 'IBM Plex Sans Arabic', sans-serif; 
+            line-height: 1.5;
+        }
+        .input-focus-gold:focus {
+            border-color: #E0AC26 !important;
+            ring-color: #E0AC26 !important;
+            --tw-ring-color: #E0AC26 !important;
+        }
+        .form-input-shadow {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background-pure text-slate-900 font-display transition-colors duration-300 leading-relaxed">
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center">
+<span class="font-bold text-2xl tracking-tight text-primary uppercase">علي تمام</span>
+</div>
+<div class="hidden md:flex items-center space-x-10 space-x-reverse text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">الأعمال</a>
+<a class="hover:text-primary transition-colors" href="#">من أنا</a>
+<a class="text-primary border-b-2 border-accent-gold pb-1" href="#">تواصل معي</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+<div class="mb-16 text-right">
+<h1 class="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+            تواصل معي
+        </h1>
+<p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+            سواء كنت تبدأ مشروعاً جديداً أو ترغب في تجديد هويتك الحالية، أنا هنا لتحويل رؤيتك إلى علامة تجارية خالدة ومميزة.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-7 bg-white p-8 md:p-12 rounded-xl border border-slate-200 shadow-sm">
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-700" for="name">الاسم</label>
+<input class="w-full px-4 py-3 rounded border border-slate-200 bg-slate-50/50 input-focus-gold outline-none transition-all text-right form-input-shadow" id="name" name="name" placeholder="الاسم الكامل" required="" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-700" for="email">البريد الإلكتروني</label>
+<input class="w-full px-4 py-3 rounded border border-slate-200 bg-slate-50/50 input-focus-gold outline-none transition-all text-right form-input-shadow" dir="ltr" id="email" name="email" placeholder="email@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-700" for="project-type">نوع المشروع</label>
+<select class="w-full px-4 py-3 rounded border border-slate-200 bg-slate-50/50 input-focus-gold outline-none transition-all text-right appearance-none form-input-shadow" id="project-type" name="project-type">
+<option value="logo">تصميم شعار</option>
+<option value="branding">هوية بصرية كاملة</option>
+<option value="social">محتوى منصات التواصل</option>
+<option value="print">مطبوعات</option>
+<option value="other">استفسار آخر</option>
+</select>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-slate-700" for="message">رسالتك</label>
+<textarea class="w-full px-4 py-3 rounded border border-slate-200 bg-slate-50/50 input-focus-gold outline-none transition-all text-right form-input-shadow" id="message" name="message" placeholder="أخبرني عن تفاصيل مشروعك..." required="" rows="5"></textarea>
+</div>
+<button class="w-full py-4 bg-primary hover:bg-[#1a236a] text-white font-bold rounded transition-all transform active:scale-[0.98] flex items-center justify-center group shadow-md" type="submit">
+                    إرسال الرسالة
+                    <span class="material-icons mr-2 group-hover:-translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+<div class="lg:col-span-5 space-y-12 text-right">
+<div class="space-y-8">
+<div>
+<h3 class="text-sm font-bold text-primary mb-4 border-r-4 border-accent-gold pr-3">معلومات التواصل</h3>
+<a class="text-xl font-medium hover:text-primary transition-colors flex items-center gap-3 justify-start" dir="ltr" href="mailto:hello@alitamam.com">
+<span class="material-icons text-primary/40">email</span>
+                        hello@alitamam.com
+                    </a>
+</div>
+<div>
+<h3 class="text-sm font-bold text-primary mb-4 border-r-4 border-accent-gold pr-3">تابعني على</h3>
+<div class="flex flex-wrap gap-4 justify-start">
+<a class="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center hover:bg-accent-gold hover:text-white transition-all text-primary" href="#">
+<span class="material-icons">share</span>
+</a>
+<a class="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center hover:bg-accent-gold hover:text-white transition-all text-primary" href="#">
+<span class="material-icons">camera_alt</span>
+</a>
+<a class="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center hover:bg-accent-gold hover:text-white transition-all text-primary" href="#">
+<span class="material-icons">business</span>
+</a>
+</div>
+</div>
+</div>
+<div class="relative p-8 rounded-xl bg-primary text-white overflow-hidden shadow-lg text-right">
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<span class="material-icons text-4xl text-accent-gold scale-x-[-1]">format_quote</span>
+</div>
+<p class="text-xl italic font-light leading-relaxed mb-6">
+                        "كل علامة تجارية عظيمة تبدأ بمحادثة. لنبدأ رحلتك معاً ونبتكر شيئاً يترك بصمة حقيقية."
+                    </p>
+<div class="flex items-center space-x-3 space-x-reverse">
+<div class="w-10 h-10 rounded-full border-2 border-accent-gold overflow-hidden">
+<img alt="Ali Tamam" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLNRp-MngEYqMOmff2dFmRKxky2TUS4_-xgRlOFm2xu5qnzScKfffcN5iPh0CGIsgby4qnF3bh32TTWt4zjkIRi3bB3QgTSE-nwnHCJZ2arEyUJl24iIdIbQEccg2ZO5xC8kpZ5mWT-edT4jaHLIGalm2yF1_y9vXenqHUx7p1YLnL17DqKtv7ZUmsEGuBIP-6azdUhVOdlP4m4meug-9bs1ZjwJhvaNw0RisH9jlez5KbRJR69onZs2v6weJb6z94AWsZ7eeryROa"/>
+</div>
+<div>
+<p class="font-bold text-sm">علي تمام</p>
+<p class="text-xs text-white/60">مصمم جرافيك وخبير هويات بصرية</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+<div class="rounded-xl overflow-hidden h-48 border border-slate-200 relative grayscale hover:grayscale-0 transition-all duration-500 shadow-sm">
+<img alt="Map Location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6y0dAOIDWJ11W8yTjcRDr5bie3Oq5vFysPDSqbNSnPBhPRSHBphamadj7jxhop9gB6uB4CMa_jtsE3dBGQp8F82fl7OWh3X34gu-MOMT9StIRrD4VxwWWvH6CWxMugfDQzFYgqA_AEt4NxgbbtHQaGAyRCHQFI7bo1A6xZKM-n74r3tm91Yqfn8nJLu7GxR_7DgJB4VC6-hHo4iS6xLbOPeSc_KrgdDNiJIMOxIdRnpX_2Ct1tYxv-HzZab5lT6JwZNG8C24CNxeE"/>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<div class="bg-white px-4 py-2 rounded shadow-md flex items-center space-x-2 space-x-reverse">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span class="text-xs font-bold text-slate-800">المقر الرئيسي</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-100 py-12 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-bold text-xl text-primary uppercase">علي تمام</span>
+<div class="text-sm text-slate-500 text-center md:text-right">
+                    © 2024 جميع الحقوق محفوظة لعلي تمام.
+                </div>
+</div>
+<div class="flex space-x-8 space-x-reverse text-xs font-bold text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">سياسة الخصوصية</a>
+<a class="hover:text-primary transition-colors" href="#">شروط الخدمة</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
